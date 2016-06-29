@@ -17,9 +17,11 @@ if(userAnswer == trueAnswer)
 function checkAnswers()
 {
 var goodAnswers=0;
-if(checkAnswer('puzzle1','капуста'))
+if(checkAnswer('puzzle1','лук'))
  goodAnswers++;
-if(checkAnswer('puzzle2','елка'))
+if(checkAnswer('puzzle2','морковь'))
+goodAnswers++;
+if(checkAnswer('puzzle3','огурец'))
 goodAnswers++;
 if(goodAnswers==0)
 alert("Вы ничего не угадали");
@@ -41,11 +43,14 @@ alert("Количество правильных ответов:"+ goodAnswers);
     <div id="box_text">
     
             <h3>Отгадай загадки!</h3>
-            <p>Сто одежек и все без застежек<p/>
+            <p>Кто его раздевает, тот слёзы проливает<p/>
             <input type="text" id='puzzle1'/>
             </br>
-            <p>Зимой и летом одним цветом <p/>
+            <p>Сидит краса в темнице, а коса на улице. <p/>
             <input type="text" id='puzzle2'/>
+            <p>Без окон, без дверей, полна горница людей. <p/>
+            <input type="text" id='puzzle3'/>
+            </br>
         <input type="button" value="Ответить" onClick ="checkAnswers()"/>
     </div>
     </div>
